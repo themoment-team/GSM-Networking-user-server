@@ -10,7 +10,7 @@ import javax.persistence.*
 @Table(name = "mentor")
 class Mentor(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val mentorId: Long,
+    val mentorId: Long = 0,
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")

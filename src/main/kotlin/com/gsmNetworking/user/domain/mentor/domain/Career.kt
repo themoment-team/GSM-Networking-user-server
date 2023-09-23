@@ -12,7 +12,7 @@ import javax.persistence.*
 @Table(name = "career")
 class Career(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val careerId: Long,
+    val careerId: Long = 0,
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "mentor_id")
