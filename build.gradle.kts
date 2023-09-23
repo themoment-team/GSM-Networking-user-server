@@ -47,7 +47,6 @@ dependencies {
 
 	/* DB */
 	implementation("mysql:mysql-connector-java:8.0.32")
-	implementation("org.springframework.boot:spring-boot-starter-data-redis")
 
 	/* test */
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
