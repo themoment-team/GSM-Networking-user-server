@@ -54,6 +54,9 @@ dependencies {
 	testImplementation("io.kotest:kotest-assertions-core-jvm:4.4.3")
 	implementation("io.kotest:kotest-extensions-spring:4.4.3")
 	testImplementation("io.mockk:mockk:1.12.0")
+
+	/* aws */
+	implementation("io.awspring.cloud:spring-cloud-aws-starter-s3:3.0.1")
 }
 
 tasks.withType<KotlinCompile> {
