@@ -24,5 +24,17 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
 
+  cloud:
+    aws:
+      credentials:
+        access-key: ${AWS_ACCESS_KEY}
+        secret-key: ${AWS_SECRET_KEY}
+      s3:
+        bucket-name: ${AWS_BUCKET_NAME}
+      region:
+        static: ${AWS_REGION}
+      stack:
+        auto: false
+
 encrypt:
   secret-key: ${ENCRYPT_SECRET_KEY}
